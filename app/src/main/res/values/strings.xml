@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Book Finder</string>
+
+    <string name="exception_url_invalid">Problem with the URL string</string>
+    <string name="info_no_books">No books found that matched your search criteria. Try again!</string>
+    <string name="error_empty_string">Did you forget to enter a Book Title?</string>
+    <string name="exception_http_request">Problem making the HTTP request</string>
+    <string name="exception_date_format">Problem formatting input date</string>
+    <string name="error_no_connection">Unfortunately your device doesn\'t have any internet connection.</string>
+    <string name="exception_resp_code">Error response code</string>
+    <string name="exception_json_results">Problem retrieving JSON results</string>
+
+    <string name="label_rating">Rating - %.0f/5</string>
+    <string name="label_no_rating">Rating - N/A</string>
+    <string name="label_date">Published Date: %s</string>
+    <string name="label_no_date"> Published Date: N/A</string>
+    <string name="label_category">Category: %s</string>
+    <string name="label_no_category">Category: N/A</string>
+    <string name="label_language">Language - %s</string>
+    <string name="label_no_language">Language - N/A</string>
+    <string name="label_page_count">Page Count: %d</string>
+    <string name="label_no_page_count">Page Count: N/A</string>
+    <string name="label_print_type">Print Type: %s</string>
+    <string name="label_no_print_type">Print Type: N/A</string>
+    <string name="label_epub_status">EPUB: Available</string>
+    <string name="label_no_epub_status">EPUB: Unavailable</string>
+    <string name="label_pdf_status">PDF: Available</string>
+    <string name="label_no_pdf_status">PDF: Unavailable</string>
+    <string name="label_no_author">Author - Unavailable</string>
+    <string name="label_no_desc">Description - Unavailable</string>
+
+    <string name="twilight_zone_text">In the Twilight Zone</string>
+    <string name="book_title">Book Title</string>
+    <string name="author_name_optional">Author Name (Optional)</string>
+    <string name="preview_button">Preview</string>
+    <string name="buy_button">Buy</string>
+  <string name="picasso_license">Picasso License</string>
+    <string name="picasso_license_link">https://github.com/square/picasso#license</string>
+    <string name="google_books_api_privacy_policy">Google Books API Privacy Policy</string>
+    <string name="googlebooks_privacy_link">https://books.google.com/googlebooks/privacy.html</string>
+</resources>

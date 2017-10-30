@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="@color/colorAccent_alternate"
+      android:orientation="vertical"
+      tools:context="com.example.android.bookfinder.MainActivity"
+      >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/cat_reading_300px"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:text="@string/twilight_zone_text"
+        android:textColor="@android:color/black"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:textColorHint="@android:color/black"
+        >
+
+      <android.support.design.widget.TextInputEditText
+          android:id="@+id/edit_book_title"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="@string/book_title"
+          android:inputType="textCapWords"
+          android:textColor="@android:color/black"
+          android:textColorHint="@android:color/black"
+          />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:textColorHint="@android:color/black"
+        >
+
+      <android.support.design.widget.TextInputEditText
+          android:id="@+id/edit_book_author"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="@string/author_name_optional"
+          android:imeOptions="actionSearch"
+          android:inputType="textCapWords"
+          android:textColor="@android:color/black"
+          android:textColorHint="@android:color/black"
+          />
+
+    </android.support.design.widget.TextInputLayout>
+
+  </LinearLayout>
+  <android.support.design.widget.FloatingActionButton
+      android:id="@+id/button_search_books"
+      android:layout_width="64dp"
+      android:layout_height="64dp"
+      android:layout_alignParentBottom="true"
+      android:layout_alignParentEnd="true"
+      android:layout_alignParentRight="true"
+      android:layout_marginBottom="16dp"
+      android:layout_marginEnd="16dp"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="16dp"
+      android:clickable="true"
+      android:src="@drawable/ic_search_white_18dp"
+      />
+</RelativeLayout>

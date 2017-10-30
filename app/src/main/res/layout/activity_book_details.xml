@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.bookfinder.BookDetailsActivity"
+    >
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="6dp"
+      android:orientation="vertical"
+      >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+      <ImageView
+          android:id="@+id/text_thumbnail"
+          android:layout_width="120dp"
+          android:layout_height="180dp"
+          android:background="@drawable/image_not_found"
+          />
+
+      <RelativeLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          >
+
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:paddingBottom="8dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="8dp"
+            android:textColor="@color/detail_title_text"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:text="Proceedings of the Second International Workshop on Nude Mice"
+            />
+
+        <TextView
+            android:id="@+id/text_author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_title"
+            android:fontFamily="sans-serif"
+            android:paddingBottom="8dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="8dp"
+            android:textColor="@color/detail_title_text"
+            android:textSize="14sp"
+            tools:text="Somtow Papinian Sucharitkul"
+            />
+
+        <TextView
+            android:id="@+id/text_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_author"
+            android:fontFamily="sans-serif"
+            android:paddingBottom="8dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="8dp"
+            android:textColor="@color/detail_text"
+            android:textSize="14sp"
+            tools:text="Rating: 2.5"
+            />
+
+        <TextView
+            android:id="@+id/text_language"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_rating"
+            android:fontFamily="sans-serif"
+            android:paddingBottom="8dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="8dp"
+            android:textColor="@color/detail_text"
+            android:textSize="14sp"
+            tools:text="Language: EN"
+            />
+
+      </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|end"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif-light"
+        android:lineSpacingExtra="4dp"
+        android:maxLines="10"
+        android:paddingBottom="8dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="16dp"
+        android:textColor="@color/detail_text"
+        android:textSize="14sp"
+        tools:text="A rules-based approach to great Java programming, this book provides 68 practical lessons that address the key issues facing every developer, from general technique (such as when to use polymorphism and when not to use method overloading) to working with objects, exception handling, performance, multi-threading, classes, interfaces, and beyond."
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+      <Button
+          android:id="@+id/text_preview"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_marginEnd="4dp"
+          android:layout_marginRight="4dp"
+          android:layout_weight="1"
+          android:background="@color/colorAccent_alternate"
+          android:text="@string/preview_button"
+          android:textColor="@android:color/black"
+          style="@style/Widget.AppCompat.Button.Colored"
+          />
+
+      <Button
+          android:id="@+id/text_buy"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="4dp"
+          android:layout_marginStart="4dp"
+          android:layout_weight="1"
+          android:background="@color/colorAccent_alternate"
+          android:text="@string/buy_button"
+          android:textColor="@android:color/black"
+          style="@style/Widget.AppCompat.Button.Colored"
+          />
+    </LinearLayout>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_marginTop="8dp"
+        card_view:cardCornerRadius="10dp"
+        >
+      <TextView
+          android:id="@+id/text_published_date"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_gravity="top|center_horizontal"
+          android:layout_marginTop="8dp"
+          android:fontFamily="sans-serif"
+          android:gravity="center"
+          android:textColor="@color/detail_text"
+          android:textSize="14sp"
+          tools:text="Published Date: June 2015"
+          />
+
+      <TextView
+          android:id="@+id/text_page_count"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="top|center_horizontal"
+          android:layout_marginTop="40dp"
+          android:fontFamily="sans-serif"
+          android:gravity="center"
+          android:textColor="@color/detail_text"
+          android:textSize="14sp"
+          tools:text="Page Count: 250"
+          />
+
+      <TextView
+          android:id="@+id/text_print_type"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="top|center_horizontal"
+          android:layout_marginTop="80dp"
+          android:fontFamily="sans-serif"
+          android:gravity="center"
+          android:textColor="@color/detail_text"
+          android:textSize="14sp"
+          tools:text="Print Type: Book"
+          />
+
+      <TextView
+          android:id="@+id/text_categories"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="top|center_horizontal"
+          android:layout_marginTop="120dp"
+          android:fontFamily="sans-serif"
+          android:gravity="center"
+          android:textColor="@color/detail_text"
+          android:textSize="14sp"
+          tools:text="Categories: Science"
+          />
+
+      <TextView
+          android:id="@+id/text_epub"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="top|center_horizontal"
+          android:layout_marginTop="160dp"
+          android:fontFamily="sans-serif"
+          android:gravity="center"
+          android:textColor="@color/detail_text"
+          android:textSize="14sp"
+          tools:text="EPUB: Available"
+          />
+
+      <TextView
+          android:id="@+id/text_pdf"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="top|center_horizontal"
+          android:layout_marginTop="200dp"
+          android:fontFamily="sans-serif"
+          android:gravity="center"
+          android:paddingBottom="8dp"
+          android:textColor="@color/detail_text"
+          android:textSize="14sp"
+          tools:text="PDF: Not Available"
+          />
+    </android.support.v7.widget.CardView>
+  </LinearLayout>
+</ScrollView>
