@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.android.bookfinder">
+    package="com.kiran.android.bookfinder">
 
     /**Allowing permissions for Internet and Network**/
     <uses-permission android:name="android.permission.INTERNET"/>
@@ -13,26 +13,26 @@
         android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity"
+        <activity android:name="com.kiran.android.bookfinder.MainActivity"
             android:screenOrientation="portrait">
         </activity>
 
         <activity
-            android:name=".BookListActivity"
+            android:name="com.kiran.android.bookfinder.BookListActivity"
             android:label="Search results"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName="com.kiran.android.bookfinder.MainActivity">
         </activity>
         <activity
-            android:name=".AboutPageActivity"
+            android:name="com.kiran.android.bookfinder.AboutPageActivity"
             android:label="About"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName="com.kiran.android.bookfinder.MainActivity">
         </activity>
         <activity
-            android:name=".BookDetailsActivity"
+            android:name="com.kiran.android.bookfinder.BookDetailsActivity"
             android:label="Book Info."
-            android:parentActivityName=".BookListActivity">
+            android:parentActivityName="com.kiran.android.bookfinder.BookListActivity">
         </activity>
-        <activity android:name=".SplashActivity"
+        <activity android:name="com.kiran.android.bookfinder.SplashActivity"
             android:screenOrientation="portrait"
             android:theme="@style/SplashScreen">
             <intent-filter>

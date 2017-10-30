@@ -10,7 +10,7 @@
       android:layout_height="match_parent"
       android:background="@color/colorAccent_alternate"
       android:orientation="vertical"
-      tools:context="com.example.android.bookfinder.MainActivity"
+      tools:context="com.kiran.android.bookfinder.MainActivity"
       >
 
     <ImageView
