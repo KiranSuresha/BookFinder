@@ -35,4 +35,19 @@
       android:text="@string/googlebooks_privacy_link"
       />
 
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="8dp"
+      android:text="@string/source_code"
+      android:textSize="24sp"/>
+
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="8dp"
+      android:autoLink="web"
+      android:text="@string/source_code_link"
+      />
+
 </LinearLayout>

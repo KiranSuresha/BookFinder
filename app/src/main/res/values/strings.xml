@@ -38,4 +38,6 @@
     <string name="picasso_license_link">https://github.com/square/picasso#license</string>
     <string name="google_books_api_privacy_policy">Google Books API Privacy Policy</string>
     <string name="googlebooks_privacy_link">https://books.google.com/googlebooks/privacy.html</string>
+    <string name="source_code">Source Code</string>
+    <string name="source_code_link">https://github.com/KiranSuresha/BookFinder</string>
 </resources>
